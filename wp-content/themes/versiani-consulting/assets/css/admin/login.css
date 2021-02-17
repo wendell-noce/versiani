@@ -1,0 +1,82 @@
+body.login {
+    background: --bg-color;
+}
+#login h1 a,
+.login h1 a {
+    background-image: url( --logo-img );
+    height: --logo-height;
+    width: --logo-width;
+    background-size: --logo-width --logo-height;
+    background-repeat: no-repeat;
+    padding-bottom: --padding-bottom;
+}
+#login form,
+.login form {
+    background: transparent;
+    box-shadow: none;
+	margin-top: 0;
+	border: none;
+}
+.login form .input,
+.login input[type=text] {
+    background: #fff;
+    border: none;
+    padding: .25rem .75rem .5rem .75rem !important;
+	font-weight: bold;
+	color: black;
+	border-radius: --input-radius;
+}
+.login form input[type=checkbox] {
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+}
+#login form input#wp-submit,
+.login form input#wp-submit {
+    background: --btn-color;
+    box-shadow: none;
+    border: none;
+    text-shadow: none;
+    font-size: rem(15);
+    font-weight: 600;
+    padding: 4px 15px 6px;
+	height: auto;
+	border-radius: --btn-radius;
+}
+.login #login_error,
+.login .message,
+.login .success {
+    margin-left: 25px !important;
+    margin-right: 25px !important;
+    border: none !important;
+    color: white;
+    margin-bottom: 0 !important;
+}
+.login .message {
+    background: #00a0d2 !important;
+}
+.login .message a {
+    color: #c8f1fd !important;
+}
+.login .success {
+    background: #46b450 !important;
+}
+.login .success a {
+    color: #e3ffb7 !important;
+}
+.login #login_error {
+    background: #dc3232 !important;
+}
+.login #login_error a {
+    color: #ffccb4 !important;
+}
+.login label {
+	font-weight: 600;
+}
+.login #backtoblog a, .login #nav a {
+    color: black !important;
+    opacity: 0.65;
+}
+.login #backtoblog a:hover, .login #nav a:hover {
+    opacity: 1;
+}

@@ -1,0 +1,16 @@
+#article-page {
+	.image-post{
+		height: 30vh;
+		@include media-breakpoint-up(lg) {
+			height: 80vh;
+		}
+		background-position: center center;
+		background-size: cover;
+	}
+
+	._sidebar{
+		@include media-breakpoint-up(lg) {
+			margin-top: -50vh;
+		}
+	}
+}

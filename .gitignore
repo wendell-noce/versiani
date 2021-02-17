@@ -1,0 +1,12 @@
+# Ignore machine and cache files
+*.DS_Store
+
+# Ignore WP files except Themes, Plugins, Language and README
+/*
+!.gitignore
+!wp-content
+wp-content/*
+!wp-content/languages
+!wp-content/themes
+!wp-content/plugins
+!README.md

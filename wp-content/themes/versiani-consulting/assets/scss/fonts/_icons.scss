@@ -1,0 +1,66 @@
+// Variables to reference the font files
+$family: 'Icons';
+$path: '../../fonts/icons';
+$basename: 'icons';
+$version: '1'; // Update this when you update the font files.
+
+// Classes settings
+$class-prefix: 'icon-';
+$icons: (
+    close: \e80a,
+    check: \e802,
+	facebook: \e80e,
+    instagram: \e812,
+    linkedin: \e810,
+    left: \e808,
+    left-arrow: \e80b,
+    location: \f031,
+    mail: \e807,
+    menu: \e80f,
+    phone: \e814,
+    right: \e809,
+    right-arrow: \e80c, 
+    search: '🔍',
+    spin: \e80d,
+    twitter: \e813,
+	youtube: \e811
+);
+
+// Create a @font-face each font variation in the $fonts list
+@font-face {
+    font-family: $family;
+    src: url('#{$path}/#{$basename}.woff2?v#{$version}') format('woff2'),
+         url('#{$path}/#{$basename}.woff?v#{$version}') format('woff'),
+         url('#{$path}/#{$basename}.ttf?v#{$version}') format('truetype'),
+         url('#{$path}/#{$basename}.svg?v#{$version}#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    // Use !important to prevent issues with browser extensions that change fonts */
+    font-family: $family !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    // Better Font Rendering
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// Return the code of the icon
+@function icon($name) {
+	@return unicode(map-get($icons, $name));
+}
+
+// Create a class for each icon in the $icons list
+@each $icon, $value in $icons {
+    .#{$class-prefix}#{$icon}:before {
+        content: unicode($value);
+    }
+}

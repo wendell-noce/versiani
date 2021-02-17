@@ -1,0 +1,198 @@
+.home {
+    // CSS for the Homepage template
+
+    .sec-title {
+        
+        width: 100%;
+        text-align: center;
+        
+        @include media-breakpoint-up(lg) {
+            width: max-content;    
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            transform: rotate(180deg);
+        }
+
+        h2 {
+            font-size: rem(26);
+            margin-top: 30px;
+
+            @include media-breakpoint-up(lg) {
+                -webkit-writing-mode: vertical-rl;
+                -ms-writing-mode: tb-rl;
+                writing-mode: vertical-rl;
+                -webkit-text-orientation: mixed;
+                text-orientation: mixed;
+                direction: rtl;
+            }
+        }
+
+        .barra {
+            height: 60%;
+            width: 3px;
+            background-color: #3d69a4;
+            margin: -20px 7px -8px 0px;
+
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+        }
+    }
+    
+    &-referencia {
+        background-color: #263549;
+
+        .box-title {
+            h2,p{
+                color: #fff;
+            }            
+
+            .btn{
+                background-color: #3d69a4;
+                color: #fff;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #3d69a4;
+                }
+            }
+        }
+    }
+
+    &-razoes {
+        .box-title {
+            max-width: 410px;
+            @include media-breakpoint-down(lg) {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            h2 {
+                font-family: "Bebas-Neue-Light";
+                strong {
+                    font-family: "Bebas-Neue-Bold";
+                }
+            }
+        }
+
+        .list {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+
+                li {
+                    flex: 0 0 33%;
+                    padding-right: 15px;
+                    @include media-breakpoint-down(lg) {
+                        padding-right: 15px;
+                        text-align: center;
+                    }
+                    @include media-breakpoint-down(md) {
+                       flex: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    &-blog{
+        @include media-breakpoint-down(md) {
+            .sec-title h2{
+                margin: 25px 0;
+            }
+        }
+    }
+
+    &-desenvolvimento {
+        padding: 1rem 0;
+        
+        @include media-breakpoint-up(md) {
+            padding: 8rem 0;
+        }
+
+        .content {
+            .index {
+                h4{
+                    font-family: "Montserrat-Bold";
+                    font-size: rem(99);
+                    color: #ececec;
+                    line-height: 1;
+                }
+
+                h3 {
+                    font-size: rem(20);
+                    
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                }
+            }
+
+            p{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 7;
+                -webkit-box-orient: vertical;
+                min-height: 12vw;
+                font-size: rem(14);
+            }            
+        }
+
+        .image {
+            img{
+                width: 85%;
+            }
+        }
+
+        .barra {
+            margin-bottom: 15px;
+            background-color: #cbcbcb;
+
+            .step{
+                height: 3px;
+                background-color: #3d69a4;
+            }
+        }
+    }
+
+    &-contato {
+        .content{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            
+
+            width: 48%;
+            @include media-breakpoint-down(md) {
+               position: relative;
+               width: 100%;
+            }
+
+            @include media-breakpoint-up(md) {
+                transform: translateY(-50%);
+            }
+
+            .barra {
+                width: rem(65);
+                height: 2px;
+                background-color: #0a6da8;
+            }
+
+            h2 {
+                color: #424242;
+            }
+        }
+
+        .carousel {
+            
+        }
+    }
+}

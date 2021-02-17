@@ -1,0 +1,37 @@
+._post-card {
+	.image{
+        img{
+            height: 266px;
+            object-fit: cover;
+        }
+    }
+
+    .content {
+        background-color: #eaeaea;
+        border-top: 8px solid;
+
+        h2{
+            @include media-breakpoint-up(lg) {
+                min-height: 123px;
+                overflow: hidden;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+        }
+
+        p{
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+           @include media-breakpoint-up(lg) {
+            min-height: 115px;
+           }
+        }
+    }
+}

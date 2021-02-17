@@ -1,0 +1,15 @@
+.btn{
+    border-radius: 0;
+    &.rounded{
+        border-radius: 100px;
+    }
+    &.btn-blue {
+        background-color: #3d69a4;
+        color: #fff;
+
+        &:hover {
+            background-color: #fff;
+            color: #3d69a4;
+        }
+    }
+}

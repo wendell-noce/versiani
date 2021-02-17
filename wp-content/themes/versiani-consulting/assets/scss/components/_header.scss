@@ -1,0 +1,23 @@
+$top-bar: 51px;
+
+._header {
+	background-color: #efefef;
+	position: sticky;
+	top: 0;
+
+	z-index: 5;
+	transition: all 0.3s easing(easeOutCubic);
+
+	.links{
+		.login{
+			display: inline-block;
+			width: 154px;
+			height: 58px;
+		}
+
+		.open-search{
+			font-size: rem( 20 );
+			color: $red;
+		}
+	}
+}

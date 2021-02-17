@@ -1,0 +1,116 @@
+{
+    "project": {
+        "name": "Versiani Consulting",
+		"id": "vec",
+        "package": "vec",
+        "url": "",
+        "author": {
+            "name": "Wendell Noce",
+            "url": "https://github.com/love-pixel-bh/"
+        }
+	},
+	"tasks": {
+		"scss": {
+			"entry": "./assets/scss/*.scss",
+			"files": "./assets/scss/**/*.scss",
+			"dist": "./assets/css/dist/"
+		},
+		"js": {
+			"entry": "./assets/js/src/*.js",
+			"files": "./assets/js/src/**/*.js",
+			"dist": "./assets/js/dist/"
+		},
+		"create": {
+			"component": {
+				"js": {
+					"template": "./.gulp/component-js",
+					"dist": "./assets/js/src/components/",
+					"prefix": "",
+					"suffix": "",
+					"name": "%PAGE_NAME_KEBAB%"
+				},
+				"scss": {
+					"template": "./.gulp/component-scss",
+					"dist": "./assets/scss/components/",
+					"prefix": "_",
+					"suffix": "",
+					"name": "%PAGE_NAME_KEBAB%"
+				},
+				"php": {
+					"template": "./.gulp/component-php",
+					"dist": "./components/",
+					"prefix": "",
+					"suffix": "",
+					"name": "%PAGE_NAME_KEBAB%"
+				}
+			},
+			"page": {
+				"php-entry": {
+					"template": "./.gulp/page-php-entry",
+					"dist": "./",
+					"prefix": "",
+					"suffix": "",
+					"name": "%CONTEXT_NAME%"
+				},
+				"php-content": {
+					"template": "./.gulp/page-php-content",
+					"dist": "./pages/",
+					"prefix": "",
+					"suffix": "",
+					"name": "%PAGE_NAME_KEBAB%"
+				},
+				"php-class": {
+					"template": "./.gulp/page-php-class",
+					"dist": "./includes/classes/",
+					"prefix": "",
+					"suffix": "Page.class",
+					"name": "%PAGE_NAME_PASCAL%"
+				},
+				"scss-entry": {
+					"template": "./.gulp/page-scss-entry",
+					"dist": "./assets/scss/",
+					"prefix": "",
+					"suffix": "",
+					"name": "%PAGE_NAME_KEBAB%"
+				},
+				"scss-styles": {
+					"template": "./.gulp/page-scss-styles",
+					"dist": "./assets/scss/pages/",
+					"prefix": "_",
+					"suffix": "",
+					"name": "%PAGE_NAME_KEBAB%"
+				},
+				"js": {
+					"template": "./.gulp/page-js",
+					"dist": "./assets/js/src/",
+					"prefix": "",
+					"suffix": "",
+					"name": "%PAGE_NAME_KEBAB%"
+				}
+			}
+		},
+		"pot": {
+			"files": "**/*.php",
+			"dist": "./languages/"
+		},
+		"mo": {
+			"files": "./languages/*.po",
+			"dist": "./languages/"
+		},
+		"favicons": {
+			"entry": "./assets/img/favicon.png",
+			"dist": "./assets/img/favicons/"
+		},
+		"iconfont": {
+			"entry": ["./assets/fonts/icons/src/svg/*.svg", "./assets/fonts/icons/src/new/*.svg"],
+			"dist": "./assets/fonts/icons/",
+			"template": "./assets/fonts/icons/src/.variables",
+			"target": "./assets/scss/fonts/_icons.scss",
+			"name": "icons"
+		},
+		"webfonts": {
+			"entry": "./assets/fonts/{font_name}/ttf/*.ttf",
+			"dist": "./assets/fonts/{font_name}/"
+		}
+	}
+}

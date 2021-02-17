@@ -1,0 +1,31 @@
+// Helper classes
+
+/* Links without underline hover */
+.undecorated-link {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+/* Scroll */
+.scroll-locked {
+	height: 100%;
+    overflow: hidden;
+}
+
+.rounded {
+    border-radius: rem(50);
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+
+.transition{
+    transition: all .3s ease-in;
+}
+
+.align-middle{
+    display: inline-block;
+    vertical-align: middle;
+}

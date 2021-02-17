@@ -1,0 +1,23 @@
+h1 {
+    font-weight: 600 !important;
+    font-size: 26px !important;
+}
+
+/* Admin re-login prompt bars */
+#wp-auth-check-wrap #wp-auth-check {
+    background: --bg-color;
+}
+
+/* Adjust thumbnail column on listing pages */
+.wp-list-table .column-thumbnail .img-wrapper {
+	display: block;
+    position: relative;
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.wp-list-table .column-thumbnail .img-wrapper img {
+	max-width: 100%;
+	height: auto;
+}

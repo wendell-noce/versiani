@@ -1,0 +1,132 @@
+._nossos-servicos {
+    background-color: #263549;
+
+    .list {
+        background-color: #1d2c40;
+    }
+
+    .servicos {
+        li {
+            margin-bottom: 10px;
+
+            a{
+                font-family: "Bebas-Neue-Regular";
+                font-size: rem( 18 );
+                color: #fff;
+                letter-spacing: 0.1rem;
+                padding: 5px 7px;
+                transition: all .3s ease;
+            }
+
+            &.active,
+            &:hover{
+                a{
+                    background-color: #3d69a4;
+                }
+            }
+        }
+    }
+
+    .desc {
+        p{
+            color: #fff;
+        }
+
+        .content {
+            display: none;
+            word-break: break-word;
+            &.active {
+                display: block;
+            }
+        }
+    }
+
+    .box-carousel{
+        background-color: #f7f7f7;
+
+        height: 400px;
+        @include media-breakpoint-up(lg) {
+            height: 100%;
+        }
+    }
+    .carousel{
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index: -1;
+
+        &.active{
+            opacity: 1;
+            z-index: 1;
+        }
+        
+        .index{
+            font-family: "MOntserrat-Bold";
+            font-size: rem(60);
+            color: #e7e5e5;
+
+            position: absolute;
+            top: 15px;
+            left: 15px;
+
+            display: none;
+        }
+
+        
+        img{
+            @include media-breakpoint-up(md) {
+                object-fit: contain;
+            }
+        }
+
+        .swiper-container{
+            padding: 60px 0;
+
+            .swiper-slide{
+                max-width: 706px;
+            }
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                top: 0;
+                
+                margin-top: 0;
+                padding: 0px 25px;
+
+                &:after {
+                    font-family: "Icons";
+                    font-size: rem(15);
+                }
+            }
+
+            .swiper-button-prev {
+                background-color: #3d69a4;
+                left: 0;
+                &:after{
+                    content: "\e808";
+                    color: #fff;
+                }
+            }
+            .swiper-button-next {
+                background-color: #fff;
+                left: 60px; 
+                &:after{
+                    content: "\e809";
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    .buttons {
+        position: absolute;
+        top: 15px;
+        left: 0;
+        z-index: 4;
+
+        .btn{
+            font-size: rem(18);
+        }
+    }
+}

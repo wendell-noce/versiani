@@ -1,0 +1,14 @@
+<?php
+/**
+ * <%= entryTitle %>
+ * 
+ * Entry file for the <%= capitalizedName %> page
+ * 
+ * @package <%= packageName %>
+ */
+
+get_header();
+
+Utils::get_template( 'pages/<%= name %>' );
+
+get_footer();

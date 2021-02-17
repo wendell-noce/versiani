@@ -1,0 +1,199 @@
+/*
+ * Navigation menu container for mobile devices
+ */
+
+._mobile-menu {
+	height: rem(70);
+	img{
+		max-height: rem(50);
+	}
+
+	.menu-icon {
+        display: block;
+        width: rem( 30 );
+        position: relative;
+
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+        cursor: pointer;
+		z-index: $zindex-popover;
+
+		.menu-bar {
+			background-color: #284873;
+			width: rem( 30 );
+			height: rem( 5 );
+			margin: {
+				top: rem(5);
+				bottom: rem(5);
+			};
+			opacity: 1;
+			transform: rotate(0deg);
+			transition: .25s ease-in-out;
+			border-radius: rem( 10 );
+
+			&:nth-child(1) {
+				transform-origin: left center;
+			}
+			&:nth-child(2) {
+				transform-origin: left center;
+			}
+			&:nth-child(3) {
+				transform-origin: left center;
+			}
+		}
+	}
+
+	// Menu icon
+	input[type=checkbox] {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        display: none;
+
+        &:checked {
+			& ~ .site-navigation {
+				transform: translateX(0);
+			}
+			& ~ .menu-icon  {
+				.menu-bar{
+					background-color: $primary !important;
+
+					&:nth-child(1) {
+						transform: translateY(0px) rotate(45deg);
+					}
+					&:nth-child(2) {
+						width: 0;
+						opacity: 0;
+					}
+					&:nth-child(3) {
+						transform: translateY(1px) rotate(-45deg);
+					}
+				}
+			}
+
+			& ~ .menu-overlay{
+				opacity: 1;
+			}
+			& ~ ._nav-menu {
+				opacity: 1;
+				left: 0px;
+				z-index: $zindex-modal;
+				@include media-breakpoint-up (md) {
+					left: -24px;
+				}
+			}
+			& ~ .btn-default {
+				background-color: $primary;
+				color: #fff;
+			}
+        }
+    }
+
+    ._nav-menu {
+        padding: {
+            top: 5rem;
+            bottom: 5rem;
+        }
+        background-color: #e8e8e8;
+
+        position: absolute;
+            top: -18px;
+            left: -1500%;
+
+        width: 90vw;
+        height: 100vh;
+
+        opacity: 0;
+        transition: .3s ease;
+        z-index: -10;
+
+        @include media-breakpoint-up (md) {
+			max-width: 60vw;
+		}
+		
+		.links {
+			a{
+				color: $primary;
+			}
+		}
+
+        ul {
+			& > li {
+				margin-bottom: .2rem;
+			}
+
+            li {
+                a {
+					@extend .h4;
+                    font-size: rem(16);
+                    font-weight: 100;
+                    color: $primary;
+
+					text-transform: uppercase;
+					padding: .25rem 0;
+    				display: inline-block;
+                }
+
+                .sub-menu{
+                    list-style: none;
+
+					padding-left: 0;
+					display: none;
+
+                    li {
+                        width: 100%;
+                        margin-left: .5rem;
+                    }
+
+                    a{
+                        font-weight: 400;
+                        text-transform: initial;
+                    }
+                }
+            }
+        }
+	}
+	
+	.tel {
+        span{
+            font-family: "Bebas-Neue-Bold";
+            font-size: rem(22);
+            color: #fff;
+
+            .ico {
+                background-color: #284873;
+            }
+
+            .tel-number {
+                background-color: #3d69a4;
+                letter-spacing: 0.1rem;
+            }
+        }
+	}
+	
+	.list-markets {
+		li{
+			margin: 0 15px;
+			a{
+				font-size: rem( 26 );
+			}
+		}
+	}
+
+    .menu-overlay {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        opacity: 0;
+        background: rgba($black, .6);
+        position: absolute;
+		top: -18px;
+		left: 0px;
+        bottom: 0;
+        transition: opacity .25s linear;
+        z-index: $zindex-modal-backdrop;
+		pointer-events: none;
+		@include media-breakpoint-up (md) {
+			left: -24px;
+		}
+    }
+}

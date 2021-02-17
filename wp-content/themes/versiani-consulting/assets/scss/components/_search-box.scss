@@ -1,0 +1,70 @@
+._search-box{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    opacity: 0;
+    z-index: -1;
+
+    &.active{
+        top: 128px;
+        opacity: 1;
+        z-index: 1135;
+        @include media-breakpoint-down(md) {
+            top: 0px;
+        }
+    }
+    
+    h3{
+        font-size: rem(20);
+        letter-spacing: 2.9px;
+        font-weight: 100;
+        @include media-breakpoint-down(md) {
+            flex: 0 0 100%;
+        }
+    }
+
+    input{
+        width: 76%;
+        height: rem(40);
+        border: 1px solid #fff;
+        font-size: rem(16);
+        color: #fff;
+
+        @include placeholder {
+            color: #fff;
+        }
+
+        @include media-breakpoint-down(md) {
+            flex: 0 0 75%;
+        }
+
+        &:focus,
+        &:active{
+            border: 1px solid #fff;
+            outline: none;
+        }
+    }
+
+    .btn-send{
+        height: rem( 40 );
+        background-color: #F12433;
+        border: none;
+        font-size: rem(18);
+        color: $white;
+
+        &:focus,
+        &:active{
+            border: none;
+            outline: none;
+        }
+
+        @include media-breakpoint-down(md) {
+            flex: 0 0 20%;
+        }
+
+        &:hover {
+            background-color: #fff;
+            color: #F12433;
+        }
+    }
+}

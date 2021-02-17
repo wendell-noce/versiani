@@ -1,0 +1,14 @@
+<?php
+/**
+ * <%= capitalizedName %> Page Class
+ * 
+ * Class for handling the <%= capitalizedName %> page data
+ * 
+ * @package <%= packageName %>
+ */
+
+class <%= _.replace(capitalizedName, /\s/g, '') %>Page {
+	function __construct() {
+
+	}
+}

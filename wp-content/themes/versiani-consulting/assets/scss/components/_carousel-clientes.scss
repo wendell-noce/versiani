@@ -1,0 +1,39 @@
+._carousel-clientes {
+    height: 455px;
+    
+    .swiper-container {
+        height: 455px;
+    }
+    .image{
+        background-color: #f4f4f4;
+        width: 210px;
+        height: 128px;
+        border: 1px solid #a4a4a4;
+    }
+
+    .swiper-button-next{
+        background-color: #ededed;
+        padding: rem(25);
+        right: 0;
+
+        &:after{
+            font-family: "Icons";
+            font-size: 24px;
+            color: #000;
+            content: "\e809"
+        }
+    }
+
+    .swiper-button-prev{
+        background-color: #ededed;
+        padding: rem(25);
+        left: 0;
+        
+        &:after{
+            font-family: "Icons";
+            font-size: 24px;
+            color: #000;
+            content: "\e808"
+        }
+    }
+}

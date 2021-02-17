@@ -1,0 +1,13 @@
+<?php
+/**
+ * <%= capitalizedName %>
+ * 
+ * <%= description %>
+ * 
+ * @package <%= packageName %>
+ */
+?>
+
+<div class="_<%= name %>">
+
+</div>

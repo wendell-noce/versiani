@@ -1,0 +1,50 @@
+._form {
+    p{
+        font-size: rem(14);
+        color: #fff;
+        margin-bottom: 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        background-color: #fff;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    textarea {
+        height: rem( 70 );
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"]{
+        height: rem(45);
+    }
+
+    select{
+        background-color: #424242;
+        color: #fff;
+        width: 100%;
+        height: rem(45);
+        margin-bottom: 15px;
+        appearance: none;                
+    }
+
+    .box-select{
+        position: relative;
+        &:after{
+            font-family: 'Icons';
+            content: "\e80c";
+            pointer-events: none;
+            color: #fff;
+
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-76%) rotate(90deg);
+        }
+    }
+}

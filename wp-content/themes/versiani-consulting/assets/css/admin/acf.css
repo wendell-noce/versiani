@@ -1,0 +1,66 @@
+.acf-postbox h2.hndle {
+    font-size: 19px !important;
+}
+.acf-postbox .acf-field .acf-label label {
+    font-size: 16px;
+    color: #198ac1;
+}
+/* .post-php .acf-postbox .acf-field .acf-label label {
+    color: #EB1C24;
+} */
+.acf-postbox .acf-field .acf-field .acf-label label {
+    font-size: 14px;
+}
+.acf-postbox .acf-field-group .acf-field .acf-label label {
+    color: #23282d;
+}
+.acf-postbox th.acf-th {
+    font-weight: bold !important;
+}
+.acf-postbox th.acf-th p {
+    font-weight: normal !important;
+}
+.warning-text {
+    color: #ff9900;
+}
+
+
+/* Hide unallowed formatting for editing posts */
+.acf-field.minimal-editor .mce-btn-group .mce-btn {
+    display: none;
+}
+
+/* Remove unnecessary space from TinyMCE (without Media Button) */
+.acf-field.no-media .wp-editor-tools {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-100%);
+}
+
+/* Lock the text area height */
+.acf-field.no-resize .mce-edit-area iframe,
+.acf-field.no-resize .wp-editor-area {
+    height: 200px !important;
+    resize: none;
+}
+.acf-field.no-resize .mce-container-body .mce-statusbar .mce-resizehandle {
+    display: none;
+}
+
+.acf-field.reduced-height .mce-edit-area iframe,
+.acf-field.reduced-height .wp-editor-area {
+    height: 120px !important;
+    min-height: 120px;
+}
+
+.acf-field.bold input {
+    font-weight: bold;
+}
+.acf-field.serif input {
+	font-family: serif;
+    font-style: italic;
+}
+.acf-field.serif input[type="text"] {
+	font-size: 125%;
+}

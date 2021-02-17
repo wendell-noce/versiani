@@ -1,0 +1,8 @@
+// Fixings for Internet Explorer browser
+// The .ie class is added via JS
+
+body.is-ie {
+	#page {
+		display: block;
+	}
+}

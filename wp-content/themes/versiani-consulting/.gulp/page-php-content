@@ -1,0 +1,19 @@
+<?php
+/**
+ * <%= capitalizedName %> Page
+ * 
+ * Template for the <%= capitalizedName %> page
+ * 
+ * @package <%= packageName %>
+ */
+
+the_post();
+?>
+
+<div id="<%= name %>-page" class="page-content">
+
+	<main id="main">
+		
+	</main>
+
+</div>

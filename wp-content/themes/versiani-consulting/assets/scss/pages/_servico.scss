@@ -1,0 +1,201 @@
+#servico-page {
+    // Specific styles for the Servico page template
+
+    .sec-title {
+        
+        width: 100%;
+        text-align: center;
+        
+        @include media-breakpoint-up(lg) {
+            width: max-content;    
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            transform: rotate(180deg);
+        }
+
+        h2 {
+            font-size: rem(26);
+            margin-top: 30px;
+
+            @include media-breakpoint-up(lg) {
+                -webkit-writing-mode: vertical-rl;
+                -ms-writing-mode: tb-rl;
+                writing-mode: vertical-rl;
+                -webkit-text-orientation: mixed;
+                text-orientation: mixed;
+                direction: rtl;
+            }
+        }
+
+        .barra {
+            height: 60%;
+            width: 3px;
+            background-color: #3d69a4;
+            margin: -20px 7px -8px 0px;
+
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+        }
+    }
+
+    .sobre{
+        background-color: #f0f0f0;
+        .content {
+            p{
+                font-size: rem(14);
+            }
+        }
+    }
+
+    .como-funciona{
+        .sec-title {
+            h2 {
+                color: #fff;
+            }            
+        }
+        .card{
+            background-color: #fcfcfc;
+
+            .index{
+                position: absolute;
+                top: 20px;
+                left: 50px;
+            
+                z-index: 0;
+                line-height: 1;
+
+                span{
+                    font-family: "Montserrat-Bold";
+                    font-size: rem(110);
+                    color: #f3f3f3;
+                }
+            }
+            .text,.image{
+                flex: 0 0 100%;
+                @include media-breakpoint-up(md) {
+                    flex: 0 0 50.1%;
+                }
+            }
+
+            .image{
+                img{
+                    object-fit: cover;
+                    height: 221px;
+                }
+            }
+
+            .text{
+                @include media-breakpoint-up(lg) {
+                    height: 100%;
+                }
+                p{
+                    font-size: rem(14);
+                }
+            }
+
+            .box-loader {
+                margin-bottom: 15px;
+                background-color: #cbcbcb;
+
+                .inner-loader{
+                    height: 3px;
+                    background-color: #3d69a4;
+                }
+            }
+        }
+    }
+
+    .beneficios {
+        background-color: #f7f7f7;
+        .content{
+           @include media-breakpoint-up(lg) {
+            transform: translateX(-35%);
+           }
+            p{
+                font-size: rem(14);
+            }
+        }
+
+        .list {
+            li {
+                flex: 0 0 50%;
+                margin-bottom: rem(20);
+
+                
+                .image{
+                    img{
+                        width: 67px;
+                        height: 67px;
+                        object-fit: cover;
+                    }
+                }
+
+                p{
+                    font-size: rem(14);
+
+                    @include media-breakpoint-up(lg) {
+                        width: 65%;
+                    }
+                }
+            }
+        }
+    }
+
+    .banner {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        .content {
+            background-color: #3d69a4;
+            @include media-breakpoint-up(lg) {
+                max-width: 350px;
+            }
+        }
+    }
+
+    .contato{
+        h2{
+            font-family: "Bebas-Neue-Light";
+            letter-spacing: 0.1rem;
+            
+            strong{
+                font-family: "Bebas-Neue-Bold";
+            }
+        }
+    }
+
+    .wpcf7-form{
+        &.invalid{
+            .wpcf7-response-output {
+                color: #721c24;
+                background-color: #f8d7da;
+                border-color: #f5c6cb;
+                border-radius: 7px;
+                margin-top: 0;
+            }
+        }
+
+        &.sent{
+            .wpcf7-response-output {
+                color: #155724;
+                background-color: #d4edda;
+                border-color: #c3e6cb;
+                border-radius: 7px;
+                margin-top: 0;
+            }
+        }
+
+        .wpcf7-not-valid-tip{
+            color: #721c24;
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+            border-radius: 4px;
+            margin-top: -10px;
+            padding: 3px 10px;
+            margin-bottom: 10px;
+        }
+    }
+}

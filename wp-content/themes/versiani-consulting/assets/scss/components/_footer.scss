@@ -1,0 +1,165 @@
+._footer {
+    background-color: #e8e8e8;
+    border-bottom: 8px solid #11629e;
+    
+    h4,.h4{
+        color: #263549;
+    }
+
+    .site-logo {
+        @include media-breakpoint-up(md) {
+            img{
+                width: 94px;
+                height: 97px;   
+            }
+        }
+    }
+
+    .newsletter{
+        input[type="email"]{
+            background-color: #11629e;
+            height: rem(45);
+            font-family: "Montserrat-Bold";
+            font-size: rem(14);
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+
+            @include placeholder{
+                color: #fff;
+            }
+        }
+
+        input[type="submit"] {
+            background-color: #fff;
+            height: rem(45);
+            font-family: "Montserrat-Bold";
+            font-size: rem(14);
+            color: #11629e;
+            border: none;
+        }
+
+        .wpcf7-form{
+            &.invalid{
+                .wpcf7-response-output {
+                    color: #721c24;
+                    background-color: #f8d7da;
+                    border-color: #f5c6cb;
+                    border-radius: 7px;
+                    margin-top: 0;
+                }
+            }
+    
+            &.sent{
+                .wpcf7-response-output {
+                    color: #155724;
+                    background-color: #d4edda;
+                    border-color: #c3e6cb;
+                    border-radius: 7px;
+                    margin-top: 0;
+                }
+            }
+    
+            .wpcf7-not-valid-tip{
+                color: #721c24;
+                background-color: #f8d7da;
+                border-color: #f5c6cb;
+                border-radius: 4px;
+                margin-top: -10px;
+                padding: 3px 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .footer-menu{
+        li {
+            a {
+                display: inline-block;
+                color: #263549;
+                font-family: "Bebas-Neue-Bold"; 
+                font-size: rem(22);
+                padding: 0 10px;
+                &:hover {
+                    text-decoration: none;
+                }                
+                @include media-breakpoint-up(lg) {
+                    font-size: rem(20);
+                }
+            }
+
+            .menu-item-description {
+                max-width: rem(255);
+                font-family: $font-family-sans-serif;
+                font-size: rem(16);
+                color: #1c1c1c;
+                margin-top: 8px;
+                @include media-breakpoint-up(lg) {
+                    
+                    margin-top: rem(20);
+                }
+            }
+
+            .sub-menu {
+                padding-left: 0;
+                list-style: none;
+                max-width: rem(255);
+                margin-bottom: 10px;
+
+                li {
+                    margin-top: 8px;
+                    padding-left: 10px;
+                    @include media-breakpoint-up(md) {
+                        margin-top: rem(20);
+                        padding-left: 0;
+                    }
+                    a {
+                        font-family: $font-family-sans-serif;
+                        font-size: rem(16);
+                        color: #1c1c1c;
+                    }
+                }
+            }
+        }
+    }
+
+    .privacy {
+        @include media-breakpoint-up(lg) {
+            position: absolute;
+            top: 160px;
+            left: 100%;
+            transform: translateX(-166%);
+            width: 174px;
+        }
+
+        a {
+            display: inline-block;
+            color: #263549;
+            font-family: "Bebas-Neue-Bold"; 
+            font-size: rem(22);
+            padding: 0 10px;
+            &:hover {
+                text-decoration: none;
+            }                
+            @include media-breakpoint-up(lg) {
+                font-size: rem(20);
+            }
+        }
+    }
+
+    .friday {
+        @include media-breakpoint-up(lg) {
+            position: absolute;
+            bottom: 00px;
+            right: 30px;
+        }
+
+        p{
+           a{
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            font-size: rem(14);
+           }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+._article-content {
+	h2,h3,h4,h5,h6{
+        font-weight: 100;
+        margin-bottom: 15px;
+        line-height: 1.4;
+    }
+
+    p, 
+    li,
+    a {
+        font-family: "Roboto-Regular";
+        font-size: rem(14);
+        color: $black;
+    }
+
+    img{
+        &.alignleft{
+            margin-right: 15px;
+        }
+        &.alignright{
+            margin-left: 15px;
+        }
+    }
+}

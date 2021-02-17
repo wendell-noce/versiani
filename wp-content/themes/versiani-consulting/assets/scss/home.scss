@@ -1,0 +1,18 @@
+/* HOME STYLESHEET */
+
+// Swiper Components
+@import "../../node_modules/swiper/swiper";
+@import "../../node_modules/swiper/components/pagination/pagination";
+@import "../../node_modules/swiper/components/navigation/navigation";
+@import "../../node_modules/swiper/components/controller/controller";
+
+// Essential modules and components
+@import './core/essentials';
+@import './components/buttons';
+@import './components/hero';
+@import './components/posts-home';
+@import './components/carousel-clientes';
+@import './components/nossos-servicos';
+@import './components/languages';
+
+@import './pages/home'; 

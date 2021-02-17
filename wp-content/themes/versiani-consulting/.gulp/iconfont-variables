@@ -1,0 +1,2 @@
+$icons: (<% _.each(glyphs, function(glyph, index) { %>
+	<%= glyph.name.replace(/icon(s*)(-|_)/g, '') %>: \<%= glyph.codepoint.toString(16).toUpperCase() %>,<% }); %>);

@@ -1,0 +1,14 @@
+import $ from 'jquery';
+import { Component } from '../util/component'; // Import to inherit from the Component class
+
+export const <%= pascalCaseName %> = new Component();
+
+// Get the DOM elements of this component
+const <%= camelCaseName %> = $('._<%= name %>');
+
+// On Load
+<%= pascalCaseName %>.pageLoaded = () => {
+    if(<%= camelCaseName %>.length) {
+		// Code here...
+	}
+}

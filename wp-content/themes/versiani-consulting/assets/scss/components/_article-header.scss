@@ -1,0 +1,29 @@
+._article-header {
+    .category{
+        border-radius: 3px 4px 4px 3px;
+        a{
+            color: $white;
+            letter-spacing: 1.4px;
+        }
+    }
+
+    .title {
+        letter-spacing: 1.8px;
+    }
+
+    .excerpt {
+        p{
+            font-family: "Roboto-Medium";
+        }
+    }
+
+    .autor {
+        font-family: "Roboto-bold";
+        color: rgba(0,0,0, .6);
+    }
+
+    .date {
+        color: rgba(0,0,0, .6);
+        font-size: rem(12);
+    }
+}

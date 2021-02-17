@@ -1,0 +1,71 @@
+/* BASIC GLOBAL CSS */
+html {
+	scroll-behavior: smooth;
+}
+
+html,body{
+	font-size: 16px;
+	color: #000;
+}
+
+// Font anti-aliasing
+* {
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	box-sizing: border-box;
+}
+
+a,
+button {
+	cursor: pointer;
+}
+
+p,a{
+	font-size: rem(16);
+	color: #1c1c1c;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="searxh"]{
+	width: 100%;
+	border: none;
+	
+	&:focus,
+	&:active{
+		border: none;
+		outline: none;
+	}
+}
+
+img,
+figure {
+	max-width: 100%;
+	height: auto;
+}
+
+img.lozad {
+	&:not(.lazy-loaded) {
+		background-color: rgba(0, 0, 0, 0.075);
+	}
+}
+
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+.wp-caption-text {
+	color: $medium;
+	@include font-size(14);
+	margin-top: 0.25rem;
+}
+
+picture {
+	img {
+		width: 100%;
+		height: auto;
+	}
+}

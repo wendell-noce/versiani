@@ -1,0 +1,58 @@
+#faq-page {
+    // Specific styles for the Faq page template
+    .faq-form {
+        background-color:  rgba(109, 88, 162, .2);
+
+        h2, p{
+            color: #6D58A2;
+        }
+
+        h2{
+            text-transform: uppercase;
+        }
+        
+        p{
+            font-family: "Roboto-Regular";
+        }
+
+        input, textarea{
+            font-family: "Roboto-Medium";
+            font-size: rem(18);
+            color: rgba(109, 88, 162, .2);
+        }
+
+        textarea,
+        .commentsubmit{
+            border: none;
+            resize: none;
+        }
+
+        input,textarea{
+            &:not(.commentsubmit){
+                background-color: transparent;
+                border-bottom: 2px solid rgba(109, 88, 162, 1);
+                height: rem(50);
+                width: 100%;
+                margin-bottom: rem( 15 );
+            }
+        }
+
+        textarea{
+            padding-top: 6px;
+        }
+
+        .commentsubmit{
+            background-color: rgba(109, 88, 162, 1);
+            width: 137px;
+            height: 38px;
+            color: $white;   
+
+            &:hover{
+                opacity: .7;
+            }
+        }
+        .title-img {
+            transform: translateY(-45px);
+        }
+    }
+}

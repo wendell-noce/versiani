@@ -1,0 +1,26 @@
+._newsletter {
+	p{
+        opacity: .6;
+        letter-spacing: 0.7px;
+        font-size: rem(14);
+        margin-bottom: 0;
+    }
+
+    input{
+        background-color: transparent;
+        font-family: 'Roboto-Regular';
+        font-size: rem(14);
+        color: #99C9E7;
+        border-bottom: 2px solid #fff;
+
+        @include placeholder{
+            color: #99C9E7;
+        }
+
+        &:focus,
+        &:active{
+            border-bottom: 2px solid #fff;
+            outline: none;
+        }
+    }
+}

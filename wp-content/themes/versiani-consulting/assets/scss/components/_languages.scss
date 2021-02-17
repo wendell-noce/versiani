@@ -1,0 +1,55 @@
+._languages {
+    width: 95px;
+    
+    text-orientation: mixed;
+    position: absolute;
+    left: 0vw;
+    top: 40%;
+    transform: translateY(-50%);
+
+    writing-mode: vertical-rl;
+    -webkit-text-orientation: mixed;
+
+    z-index: 50;
+
+	.tetx{
+        @include media-breakpoint-up(md) {
+            direction: rtl;
+            transform: rotate(180deg);
+        }
+
+        p{
+            margin: 0;
+        }
+        
+        a{
+            font-size: rem( 24 );
+            color:#424242;
+            transform: rotate(90deg);
+            display: inline-block;
+        }
+    }
+
+    .barra{
+        background-color: #838C91;
+        height: 100%;
+        width: 3px;      
+        margin: 0;
+    }
+
+    .list{
+        padding: 100px 0;
+
+        li{
+            transform: rotate(-90deg);
+            margin: 6px 0;
+            a{
+                color:#424242;
+                font-weight: bold;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

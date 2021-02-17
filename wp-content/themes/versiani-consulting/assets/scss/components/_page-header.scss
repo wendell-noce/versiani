@@ -1,0 +1,62 @@
+._page-header {
+    background-color: #efefef;
+    
+	.content{
+        .title {
+            width: 60%;
+            position: absolute;
+            left: rem( 124 );
+            top: 50%; 
+            transform: translateY(-50%);
+            z-index: 2;
+            @include media-breakpoint-down(md) {
+                width: 100%;
+                left: 0;
+                transform: none;
+                top: 4%;
+                position: relative;
+               }
+
+            .barra{
+                width: 65px;
+                height: 2px;
+                background-color: #0a6da8;
+                margin-left: 0;
+            }
+
+            h1,h2 {
+                font-family: "Bebas-Neue-Bold";
+                font-size: rem( 60 );
+                margin-bottom: 20px;
+                letter-spacing: 0.4rem;
+                @include media-breakpoint-down(md) {
+                    font-size: 1.75rem;
+                   }
+            }
+
+            p{
+                color: #424242;
+            }
+        }
+
+        &.bg-blue{
+            background: linear-gradient(to right,  #263549 0%,#263549 70%,#efefef 70%,#efefef 70%,#efefef 100%); 
+            @include media-breakpoint-down(md) {
+               background: #263549;  
+               padding: 0 7%;
+            }
+            h1,h2,p{
+                color: #fff;
+            }
+        }
+
+        &.bg-gray {
+            background: linear-gradient(to right,  #e6e6e6 0%,#e6e6e6 70%,#efefef 70%,#efefef 70%,#efefef 100%); 
+            @include media-breakpoint-down(md) {
+                background: #e6e6e6;  
+                padding: 0 7%;
+
+            }
+        }
+    }
+}

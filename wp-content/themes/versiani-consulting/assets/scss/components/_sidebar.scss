@@ -1,0 +1,75 @@
+._sidebar {
+
+    .list-markets{
+        text-align: right;
+        li{
+            margin: 0px;
+            a{
+                font-size: rem( 16 );
+                color: #fff;
+            }
+        }
+    }
+
+    a,h3{
+        letter-spacing: 0.1em;
+    }
+
+	.categorias {
+        .barra{
+            height: 2px;
+            width: 30px;
+        }
+
+        li{
+            font-size: rem( 18 );
+            margin-bottom: 20px;
+        }
+    }
+
+    .mais-lidos {
+        li {
+            margin-bottom: 10px;
+            font-size: rem( 18 );
+
+            &::marker{
+                color: #fff
+            }
+        }
+    }
+
+    .search {
+        position: relative;
+
+        input{
+            background-color: transparent;
+            border: 1px solid #eaeaea;
+            height: rem( 45 );
+            color: #fff;
+            @include placeholder{
+                color: #fff;
+            }
+        }
+
+        button{
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #fff;
+        }
+    }
+
+    .consultor {
+        background-color: #3d69a4;   
+        h3 {
+            letter-spacing: 0.1em;
+        }
+
+        h3,p{
+            color: #fff;
+        }
+    }
+}

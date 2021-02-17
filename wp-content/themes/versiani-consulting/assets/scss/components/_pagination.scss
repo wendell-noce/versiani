@@ -1,0 +1,20 @@
+.pagination {
+    a, span{
+        background-color: #263549;
+        font-size: rem( 14 );
+        font-weight: 700;
+        color: #fff;
+        padding: 10px 16px;
+        border-radius: 4px;
+        border: 1px solid #263549;
+        transition: .3s all ease;
+        display: inline-block;
+
+        &.current,
+        &:hover {
+            border: 1px solid #263549;
+            background-color: #fff;
+            color: #263549;
+        }
+    }
+}

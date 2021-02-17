@@ -1,0 +1,15 @@
+/* CONTATO STYLESHEET */
+
+// Bootstrap Components
+// Import additional Bootstrap modules for this page here...
+
+// Essential modules and components
+@import './core/essentials';
+
+// Needed Components
+@import './components/page-header';
+@import './components/form';
+@import './components/languages';
+
+// Page specific styles
+@import './pages/contato';

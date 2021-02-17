@@ -1,0 +1,119 @@
+#sobre-nos-page {
+    // Specific styles for the Sobre Nos page template
+
+    .sobre {
+        background-color: #f0f0f0;
+
+        .image {
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .box-content {
+            @include media-breakpoint-up(lg) {
+                transform: translateX(-15%);
+            width: 115%;
+            }
+
+            p{
+                font-size: rem(14);
+            }
+        }
+
+        .missoes {
+            li {
+                flex: 0 0 50%;
+                @include media-breakpoint-down(md) {
+                    flex: 0 0 100%;
+                    margin-bottom: 5%;
+     
+                    }
+
+                h3 {
+                    background-color: #3d69a4;
+                    font-size: 22px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    padding: 3px 5px 3px 0;
+                }
+
+                p{
+                    font-size: rem(14);
+                }
+
+                h3,p{
+                    padding-left: rem(65);
+                }
+            }
+        }        
+    }
+
+    .diferenciais {
+        .content{
+            transform: translateX(-35%);
+            @include media-breakpoint-down(md) {
+               transform: none;
+               margin-bottom: 5%;
+            }
+        }
+
+        .list {
+            li {
+                flex: 0 0 50%;
+                margin-bottom: rem(20);
+
+                .ico{
+                    background-color: #3d69a4;
+                    width: rem( 67 );
+                    height: rem( 67 );
+                    font-size: rem(25);
+                    color: #fff;
+                    line-height: rem(67);
+                }
+
+                p{
+                    font-size: rem(14);
+                    color: #fff;
+
+                    @include media-breakpoint-up(lg) {
+                        width: 65%;
+                    }
+                }
+            }
+        }
+    }
+
+    .curriculo {
+        background-color: #f0f0f0;
+        .barra {
+            width: rem(65);
+            height: 3px;
+            background-color: #3d69a4;
+        }
+
+        h3{
+            letter-spacing: 0.1rem;
+            &.name{
+                font-family: "Bebas-Neue-Light";
+            }
+        }
+
+        p{
+            font-size: rem(14);
+        }
+    }
+
+    .contato{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        .content{
+            background-color: #f5efee;
+
+            
+        }
+    }
+}

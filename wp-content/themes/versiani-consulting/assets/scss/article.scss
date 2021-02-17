@@ -1,0 +1,11 @@
+/* DEFAULT PAGE STYLESHEET */
+
+// Essential modules and components
+@import './core/essentials';
+
+// Needed Components
+@import './components/sidebar';
+@import './components/the-content';
+
+// Page specific styles
+@import './pages/article';

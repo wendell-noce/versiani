@@ -1,0 +1,74 @@
+.comments {
+    &-form{
+        background-color:  rgba(236, 105, 163, .2);
+
+        input, textarea{
+            font-family: "Roboto-Medium";
+            font-size: rem(18);
+            color: rgba(29, 29, 27, .6);
+        }
+
+        textarea,
+        .commentsubmit{
+            border: none;
+            resize: none;
+        }
+
+        input,textarea{
+            &:not(.commentsubmit){
+                background-color: transparent;
+                border-bottom: 2px solid rgba(236, 105, 163, 1);
+                height: rem(50);
+                width: 100%;
+                margin-bottom: rem( 15 );
+            }
+        }
+
+        textarea{
+            padding-top: 6px;
+        }
+
+        .commentsubmit{
+            background-color: #EC69A3;
+            width: 137px;
+            height: 38px;
+            color: $white;   
+
+            &:hover{
+                opacity: .7;
+            }
+        }
+    }
+    .title-img {
+        transform: translateY(-45px);
+    }
+
+
+    &-list {
+        li{
+            border-bottom: 1px solid rgba(0,0,0, .1);
+        }
+        p,a{
+            font-family: "Roboto-Medium";
+            font-size: rem(14);
+            margin-bottom: rem(5);
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .author {
+            a,p{
+                color: #EC69A3;
+            }
+        }
+        .comment-meta {
+            p{
+                color: rgba( 0,0,0, .6);
+            }
+
+            a{
+                color: #EC69A3;
+            }
+        }
+    }
+}

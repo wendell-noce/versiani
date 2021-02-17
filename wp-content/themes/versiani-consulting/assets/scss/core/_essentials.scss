@@ -1,0 +1,33 @@
+// Essential modules (Before Bootstrap)
+
+// Mixins
+@import "mixins";
+
+// Fonts
+@import "../fonts/icons";
+@import "../fonts/bebas-neue";
+@import "../fonts/effra";
+@import "../fonts/montserrat";
+
+
+// Bootstrap
+@import "bootstrap"; // Include all essential modules (functions, variables, mixins and reboot)
+
+// Global CSS
+@import "animations";
+@import "global";
+@import "helpers";
+@import "typography";
+
+// Only if logged in
+@import "logged";
+
+// Components
+@import "../components/buttons";
+@import "../components/desktop-menu";
+@import "../components/footer";
+@import "../components/header";
+@import "../components/mobile-menu";
+
+// Internet Explorer fixes
+@import "ie";

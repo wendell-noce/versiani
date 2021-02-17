@@ -1,0 +1,17 @@
+/* SOBRE NOS STYLESHEET */
+
+// Bootstrap Components
+@import "../../node_modules/swiper/swiper";
+@import "../../node_modules/swiper/components/pagination/pagination";
+@import "../../node_modules/swiper/components/navigation/navigation";
+@import "../../node_modules/swiper/components/controller/controller";
+
+// Essential modules and components
+@import './core/essentials';
+
+// Needed Components
+@import './components/page-header';
+@import './components/carousel-clientes';
+@import './components/languages';
+
+@import './pages/sobre-nos';
